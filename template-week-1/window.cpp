@@ -50,7 +50,7 @@ window::window( int x_size, int y_size, int scale ):
    x_size( x_size ), y_size( y_size), scale( scale )
 {
    
-   HINSTANCE hInstance;
+   volatile HINSTANCE hInstance;
    WNDCLASSEX wc; /* A properties struct of our window */
    HWND hwnd; 
 
