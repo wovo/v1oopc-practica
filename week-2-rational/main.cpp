@@ -1,9 +1,8 @@
 #include "ostream"
 #include "rational.hpp"
 
-// needed to get Catch working with MinGW
-#define TWOBLUECUBES_CATCH_REPORTER_JUNIT_HPP_INCLUDED
-namespace Catch{ class JunitReporter{ ~JunitReporter(); }; };
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
 
 #include "catch_with_main.hpp"
 
