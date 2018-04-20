@@ -4,8 +4,6 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 
-#include "catch_with_main.hpp"
-
 TEST_CASE( "constructor, two_parameters" ){
    rational v( 3, 4 );
    std::stringstream s;
